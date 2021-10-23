@@ -3,15 +3,34 @@
     text-align: center;
 }
 
-#container div {
+#container {
     font-size:50px;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
 }
 #container {
-    display: flex;
-    flex-wrap: wrap ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #container code {
     background-color: beige;
-    margin: 5px;
+    font-size: 20px;
+    margin-left: -1rem;
+    margin-bottom: 3rem;
+    padding: 5px;
+    text-align: left;
 }
 
+@media screen and (min-width: 760px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
